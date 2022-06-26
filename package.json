@@ -16,7 +16,10 @@
 		"build": "tsc -p tsconfig.build.json",
 		"prebuild": "yarn generate",
 		"clean": "del 'artifacts' 'typechain-types'",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"deploy": "hardhat run scripts/sample-script.ts",
+		"network": "hardhat node",
+		"console": "hardhat console"
 	},
 	"author": "aggre",
 	"license": "MPL-2.0",

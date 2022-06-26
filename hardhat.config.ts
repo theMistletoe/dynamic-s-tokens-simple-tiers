@@ -45,12 +45,16 @@ const config: HardhatUserConfig = {
 				mnemonic: mnemnoc,
 			},
 		},
-		polygonMumbai: {
+		polygonMumbai: {		
 			url: `https://polygon-mumbai.infura.io/v3/${process.env.INFURA_KEY!}`,
 			accounts: {
 				mnemonic: mnemnoc,
 			},
 		},
+		matic: {
+			url: process.env.ALCHEMY_MUNBAI_ENDPOINT,
+			accounts: [process.env.PRIVATE_KEY!]
+		}
 	},
 	etherscan: {
 		apiKey: {
